@@ -1,4 +1,4 @@
-package exemplo;
+package executavel;
 import java.text.DecimalFormat;
 import javax.swing.JOptionPane;
 
@@ -26,4 +26,4 @@ public class ProgramaPrincipal {
 				df.format((aluno1.calculaMedia() + aluno2.calculaMedia() + 
 				 aluno3.calculaMedia() + aluno4.calculaMedia())/4 ));
 		}
-} 
+}
