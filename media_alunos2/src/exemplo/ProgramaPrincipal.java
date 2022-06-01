@@ -1,4 +1,4 @@
-package executavel;
+package exemplo;
 import java.text.DecimalFormat;
 import javax.swing.JOptionPane;
 
