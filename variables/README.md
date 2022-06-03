@@ -1,3 +1,17 @@
+// import
+//java.applet apps
+//java.util utilitarios
+//java.math
+//java,net redes
+//javax.sound
+//javax.media
+//javax.swing interfaces graficas
+//javaFx.fxml
+
+//byte -127 a 127
+//short -32768 a 32767
+//int -2147483648 a 2147483647
+//long -922337203685477000l a 922337203685477000l
 
 ## Getting Started
 
