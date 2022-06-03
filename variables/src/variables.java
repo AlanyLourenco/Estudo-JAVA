@@ -3,20 +3,39 @@ public class variables {
         //tipo nome
         //inteiras
        byte number01 = 125;
-       System.out.println(number01);
        short number02 = -32768;
-       System.out.println(number02);
        int number03 = 2147483647;
-       System.out.println(number03);
        long number04 = 922337203685477000l;
+
+       System.out.println(number01);
+       System.out.println(number02);
+       System.out.println(number03);
        System.out.println(number04);
 
        //ponto flutuante
        float Weight = 53.9f;
-       double pi = 3.14;
+       //ou
+       double pi;
+       pi = 3.14;
+
+       System.out.println(Weight);
+       System.out.println(pi);
 
        //caracter
-       char name = 'a';
+       char letter = 'a';
+       
+       System.out.println(letter);
+
+       //booleam
+       boolean iAmStudying = true;
+
+       System.out.println(iAmStudying);
+
+       //String class
+       String name = "Alany";
+
+       System.out.println(name);
+
     }
 }
 // import
