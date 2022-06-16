@@ -1,3 +1,5 @@
+package scanner.src;
+
 import java.util.Scanner;
 
 public class FunctionScanner {
@@ -6,7 +8,7 @@ public class FunctionScanner {
         String name;
         
         //scanner -> classe
-        Scanner reader= new Scanner(System.in);
+        Scanner reader = new Scanner(System.in);
         //necessario para o uso de espaços pois define que os separadores são \r e \n
         //[] siguinifica ou 
         //+ significa que eles podem se repetir
@@ -17,7 +19,12 @@ public class FunctionScanner {
         System.out.println("Your number is "+ number);
        
         System.out.println("What's your name? ");
-        name = reader.next();
+        //name = reader.next();
+        name= reader.nextLine();
         System.out.format("Your name is: %s ",name);
+
+        
+
+
     }
 }

@@ -1,3 +1,5 @@
+package variables.src;
+
 public class variables2 {
     public static void main(String[] args) throws Exception {
     String name = "Alany";

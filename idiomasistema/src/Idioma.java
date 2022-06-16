@@ -1,3 +1,5 @@
+package idiomasistema.src;
+
 import java.util.Locale;
 import java.awt.Toolkit;
 import java.awt.Dimension;
