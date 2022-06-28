@@ -5,6 +5,8 @@ public class App {
         heroi.nome="hercules";
         heroi.nivel=3;
         heroi.forca=10;
-        
+
+        heroi.statusPer();
+        heroi.atacar("hydra");
     }
 }
