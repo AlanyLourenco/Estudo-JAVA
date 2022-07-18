@@ -1,0 +1,20 @@
+Métodos acessores
+acesso indireto ao objeto/atributo
+segurança
+
+-getters
+-get 
+
+Métodos modificadores
+
+-setters
+-set
+-adicionar indiretamente
+
+Metodo construtor
+
+Construct
+todo objeto da classe x vai ter as mesmas caracteristicas que o construtor tiver
+pode receber parametros
+
+
