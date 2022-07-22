@@ -1,3 +1,3 @@
 public interface Publicavel {
-    public abstract void mostrarDados();
+    public abstract String mostrarDados();
 }
