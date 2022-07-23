@@ -7,8 +7,8 @@ public class Combate{
         l[3]= new Lutador("Charles","BR",32,1.78f,71,31,8,0);
 
         for(int i=0;i<4;i++){
-            l[i].apresentar();
-            l[i].status();
+            //l[i].apresentar();
+            //l[i].status();
         }
 
         l[1].perderLuta();
@@ -16,9 +16,16 @@ public class Combate{
         System.out.println("\n\n\n");
         
         for(int i=0;i<4;i++){
-            l[i].apresentar();
-            l[i].status();
+            //l[i].apresentar();
+            //l[i].status();
         }
+        l[2].status();
+        l[1].status();
+        Luta l01 =new Luta();
+        l01.marcarLuta(l[2], l[1]);
+        l01.lutar();
+        l[2].status();
+        l[1].status();
     }    
 }
 //Agregação
