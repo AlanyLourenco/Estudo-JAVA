@@ -1,40 +1,43 @@
+import java.util.ArrayList;
+
 public class Cidade implements Publicavel {
-    private int cod;
+    private String cod;
     private String nome;
     private int populacao;
-    private float area;
-    private String citFrot;
+    private double area;
+    ArrayList <Cidade> front= new ArrayList <Cidade>();
 
-    public Cidade(){
-        this.setCod(0000);
-        this.setNome("NENHUM");
-        this.setArea(0f);
+    public Cidade(String cod, String nome, double d)
+    {   this.cod = cod;
+        this.nome = nome;
+        this.area = d;
     }
 
-    public int getCod(){
-        return cod;}
-    public void setCod(int codigo){
-        this.cod=codigo;}
 
-    public int getPopulacao(){
-        return populacao;}
+   
     public void setPopulacao(int numpop){
         this.populacao=numpop;}
 
-    public String getNome(){
-        return nome;}
-    public void setNome(String citnome){
-        this.nome=citnome;}
 
-    public String getCitFrot(){
-        return citFrot;}
-    public void setCitFront(String citfr){
-        this.citFrot=citfr;}
+    public String getCitFrotcm(Cidade cidade){
+      String ath = "Cidades em Comum";
 
-    public float getArea(){
-        return area;}
-    public void setArea(float citarea){
-        this.area=citarea;}
+      for(int i = 0; i < this.front.size(); i++)
+      {
+        for(int j = 0; j < this.front.size(); j++)
+        {
+         if(this.front.get(i) == cidade.front.get(i)){
+            ath = ath + "\n" + "| " + this.front.get(i).mostrarDados();
+         }
+        }
+      }
+      
+        return ath ;}
+
+    public void setCitFront(Cidade citfr){
+        this.front.add(citfr);}
+
+   
 
     public boolean cidadesIguais(Cidade b){
         boolean v=false;
@@ -52,26 +55,32 @@ public class Cidade implements Publicavel {
     }*/
 
     public void densidade(){
-       if((this.getPopulacao()/this.getArea())>500){
-        System.out.println("\nPopulação Elevada: "+this.getPopulacao()/this.getArea()+"\n");
+       if((this.populacao/this.area)>500){
+        System.out.println("\nPopulação Elevada: "+this.populacao/this.area+"\n");
        }
-       else if((this.getPopulacao()/this.getArea())>=100 && (this.getPopulacao()/this.getArea())<=500){
-        System.out.println("\nPopulação Regular: "+this.getPopulacao()/this.getArea()+"\n");
+       else if((this.populacao/this.area)>=100 && (this.populacao/this.area)<=500){
+        System.out.println("\nPopulação Regular: "+this.populacao/this.area+"\n");
        }
-       else if((this.getPopulacao()/this.getArea())<100){
-        System.out.println("\nPopulação Baixa: "+this.getPopulacao()/this.getArea()+"\n");
+       else if((this.populacao/this.area)<100){
+        System.out.println("\nPopulação Baixa: "+this.populacao/this.area+"\n");
        }
     }
 
     @Override
-    public void mostrarDados() {
-        System.out.println("\n______________________________________\n");
-        System.out.println("NOME: "+this.nome);
-        System.out.println("COD: "+this.cod);
-        System.out.println("POPULAÇÃO: "+this.populacao);
-        System.out.println("ÁREA: "+this.area);
-        //System.out.println("CIDADES QUE FAZ FRONTEIRA: ");
+    public String mostrarDados() {
+        String cid = "\n Nome: " + this.nome + "\n Cod: " + this.cod + "\n População: " + this.populacao + "\n Area: " + this.area + "\n Cidades vizinhas: ";
+        if(this.fronteira.size() == 0)
+        {
+            return city;
+        }
+        city = city +  "\n" + "Lista de cidades vizinhas: ";
+       for(int i = 0; i < this.fronteira.size(); i++)
+       {
         
+        city = city + "\n" + "| " +fronteira.get(i).nome;
+       }
+       re
+        return cid;   
     }
 
 
