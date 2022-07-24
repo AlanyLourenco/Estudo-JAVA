@@ -11,6 +11,14 @@ public class App {
         p3.setNome("Gabriely");
         p4.setNome("Silva");
 
+        p2.setCurso("E.S");
+        p3.setSalario(5000f);
+        p4.setSetor("INF.");
+
+
         System.out.println(p1.toString());
+        System.out.println(p2.toString());
+        System.out.println(p3.toString());
+        System.out.println(p4.toString());
     }
 }

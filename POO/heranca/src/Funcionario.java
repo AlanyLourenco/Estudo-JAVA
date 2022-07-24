@@ -17,8 +17,8 @@ public class Funcionario extends Pessoa {
     public void setTrabalhando(boolean trabalhando) {
         this.trabalhando = trabalhando;
     }
-    @Override
+    /*@Override
     public String toString() {
         return super.toString();
-    }
+    }*/
 }
